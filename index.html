@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayari Sagar</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="heading">
+        <div class="title">
+    <h1 class="shtitle">🌊Shayri Sagar</h1>
+    <p>एक समंदर शायरी का — खोजो, पढ़ो और सहेजो अपनी पसंदीदा शायरी।</p>
+  </div></div>
+    <div class="button">
+    <button class="Dbtn" id="Dbtn">Discover</button>
+    <button class="Fbtn" id="Fbtn" onclick="Favorite()">Favorite</button>
+ 
+    
+   <div class="type" id="dropdown">
+    <label style="color:rgb(253, 253, 255); font-size: 20px;">Type of Shayaris</label>
+    <select  class="select" onchange="FilterShayari(this.value)">
+        <option value="motivational">🎯Motivational</option>
+        <option value="philosophy">✒️Philosophy</option>
+        <option value="love">❤️love</option>
+        <option value="friendship">🫂friendship</option>
+    </select>
+</div>
+</div>
+
+<div id="shayari">Click on Discover👆 to Explore a 🌍 of Shayari🗒️.
+
+</div>
+
+<div class="load" style="display: flex;  justify-content: center;">
+<div class="text-center" style="display: none;" id="loader">
+  <div class="spinner-border" role="status" >
+    <span class="visually-hidden">Loading...</span>
+  </div></div>
+</div>
+<div style="display:flex; justify-content: center;" id="loadmore">
+<button id="loadBtn" type="button" disabled>Load More Shayari</button></div>
+<script src="script.js"></script>
+
+</body>
+</html>
