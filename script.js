@@ -40,7 +40,7 @@ let shayariData = []; // Array to hold shayari data
 const FetchData = async (page) => { // here page=1 is a default parameter
   try {
     displayloader();
-    const response = await fetch(`${API}${page}`);
+    const response = await fetch(`/api/proxy?page=${page}`);
     const data = await response.json();
     console.log("fetched data", data);
 
